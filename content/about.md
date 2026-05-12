@@ -13,7 +13,7 @@ Hello! I am **Yucheng Xu (Cade)**.
 
 I am a **Geographer** and a **Graduate Student**. My passion lies in "Building my city" through the lens of data and technology. I bridge the gap between geographic space and digital code using **Python**.
 
-+++
+---
 
 ## 🎓 Education
 
@@ -22,7 +22,7 @@ I am a **Geographer** and a **Graduate Student**. My passion lies in "Building m
 - **Hangzhou City University**  
   *Bachelor of Engineering in Electronic Science and Technology (2017 - 2021)*
 
-+++
+---
 
 ## 🔍 Research Interests
 
@@ -30,7 +30,7 @@ I am a **Geographer** and a **Graduate Student**. My passion lies in "Building m
 - **GIS & Remote Sensing**: Spatial analysis and visualization.
 - **Computational Geography**: Using Python to solve spatial problems.
 
-+++
+---
 
 ## 🛠 Skills
 
@@ -38,7 +38,7 @@ I am a **Geographer** and a **Graduate Student**. My passion lies in "Building m
 - **GIS Tools**: ArcGIS Pro, QGIS, ENVI.
 - **Design/Web**: Hugo, Markdown, Adobe Suite.
 
-+++
+---
 
 ## 📫 Contact Me
 
