@@ -3,6 +3,9 @@ languageCode = 'en-us'
 title = 'Yucheng Xu' # 浏览器标签页显示的标题
 theme = 'PaperMod'
 
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
+
 [params]
     env = "production"
     title = "Yucheng Xu"
@@ -23,10 +26,10 @@ theme = 'PaperMod'
         # 首页上的功能按钮
         [[params.profileMode.buttons]]
             name = "View my projects"
-            url = "posts"
+            url = "/posts/"
         [[params.profileMode.buttons]]
             name = "About me"
-            url = "about"
+            url = "/about/"
 
     # 社交媒体链接（会自动显示图标）
     [[params.socialIcons]]
@@ -39,9 +42,9 @@ theme = 'PaperMod'
 # 导航栏配置
 [[menu.main]]
     name = "Article"
-    url = "posts"
+    url = "/posts/"
     weight = 10
 [[menu.main]]
     name = "Search"
-    url = "search"
+    url = "/search/"
     weight = 20
