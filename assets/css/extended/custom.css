@@ -1,61 +1,53 @@
 /* =========================================
-   1. 布局优化：增加网页宽度，减少两侧留白
+   1. 布局：保持宽屏
    ========================================= */
-
-/* 调整主容器宽度 */
 .main {
-    max-width: 1150px; /* 原版约 800px，改为 1150px 更显大气 */
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* 调整文章内容宽度 */
-.post-content,
-.post-header,
-.post-meta {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* 增加文字行高，提升中文阅读体验 */
-.post-content {
-    line-height: 1.8;
-    letter-spacing: 0.02em;
-    font-size: 1.1rem;
+    max-width: 1100px;
+    margin: auto;
 }
 
 /* =========================================
-   2. 颜色美化：地理学者/极客 风格皮肤
+   2. 颜色：极简清爽风格（护眼、专业）
    ========================================= */
-
 :root {
-    /* --- 浅色模式颜色 --- */
-    --theme: #2e8b57;           /* 核心品牌色：森林绿 */
-    --primary: #2c3e50;         /* 标题颜色 */
-    --secondary: #5d6d7e;       /* 副标题/描述颜色 */
-    --tertiary: #f9fbf9;        /* 轻微的背景底色 */
-    --content: #34495e;         /* 正文文字颜色 */
-    --nav-bg: #ffffff;          /* 导航栏背景 */
-    --code-bg: #f5f5f5;         /* 代码块背景 */
-    --border: #e0e0e0;          /* 边框线颜色 */
+    /* 浅色模式 */
+    --theme: #4b8b3b;           /* 柔和的草木绿，仅作为点缀 */
+    --primary: #2c3e50;         /* 深灰色文字，比纯黑更高级 */
+    --secondary: #7f8c8d;       /* 辅助文字 */
+    --tertiary: #fdfdfd;        /* 极浅的灰色背景（几乎是白色） */
+    --content: #34495e;         /* 正文颜色 */
+    --nav-bg: rgba(255, 255, 255, 0.9); /* 半透明导航栏 */
+    --code-bg: #f7f9fa;
+    --border: #ececec;
 }
 
 .dark {
-    /* --- 深色模式颜色 --- */
-    --theme: #41b883;           /* 核心品牌色：亮青色 (类似 Vue/Python 风格) */
+    /* 深色模式 */
+    --theme: #82c91e;           /* 明亮的嫩绿 */
     --primary: #e1e1e1;
     --secondary: #adb5bd;
-    --tertiary: #252627;
+    --tertiary: #1a1b1e;        /* 深色背景 */
     --content: #dcdcdc;
     --nav-bg: #1d1e20;
     --code-bg: #2e2e33;
     --border: #333;
 }
 
-/* 鼠标悬停在链接上的颜色 */
+/* 修正：确保背景不是全绿 */
+body {
+    background-color: var(--tertiary);
+}
+
+/* 链接悬停颜色 */
 a:hover {
     color: var(--theme);
+}
+
+/* 目录(TOC)美化 */
+.toc {
+    background: #f8f9fa !important;
+    border: 1px solid var(--border) !important;
+    color: var(--primary) !important;
 }
 
 /* =========================================

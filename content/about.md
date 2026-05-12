@@ -1,8 +1,8 @@
 +++
 title = "About Me"
 date = 2026-05-13
-description = "A brief introduction of Cade (Yucheng Xu)"
 draft = false
+description = "A brief introduction of Cade (Yucheng Xu)"
 showToc = true
 TocOpen = true
 +++
