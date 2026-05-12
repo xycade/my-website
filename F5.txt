@@ -1,0 +1,7 @@
+git add .
+git commit -m "style: 启用个人名片模式并添加头像"
+git push
+
+git add .
+git commit -m "feat: add about page and search page"
+git push
