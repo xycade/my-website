@@ -1,0 +1,94 @@
+/* =========================================
+   1. 布局优化：增加网页宽度，减少两侧留白
+   ========================================= */
+
+/* 调整主容器宽度 */
+.main {
+    max-width: 1150px; /* 原版约 800px，改为 1150px 更显大气 */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 调整文章内容宽度 */
+.post-content,
+.post-header,
+.post-meta {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 增加文字行高，提升中文阅读体验 */
+.post-content {
+    line-height: 1.8;
+    letter-spacing: 0.02em;
+    font-size: 1.1rem;
+}
+
+/* =========================================
+   2. 颜色美化：地理学者/极客 风格皮肤
+   ========================================= */
+
+:root {
+    /* --- 浅色模式颜色 --- */
+    --theme: #2e8b57;           /* 核心品牌色：森林绿 */
+    --primary: #2c3e50;         /* 标题颜色 */
+    --secondary: #5d6d7e;       /* 副标题/描述颜色 */
+    --tertiary: #f9fbf9;        /* 轻微的背景底色 */
+    --content: #34495e;         /* 正文文字颜色 */
+    --nav-bg: #ffffff;          /* 导航栏背景 */
+    --code-bg: #f5f5f5;         /* 代码块背景 */
+    --border: #e0e0e0;          /* 边框线颜色 */
+}
+
+.dark {
+    /* --- 深色模式颜色 --- */
+    --theme: #41b883;           /* 核心品牌色：亮青色 (类似 Vue/Python 风格) */
+    --primary: #e1e1e1;
+    --secondary: #adb5bd;
+    --tertiary: #252627;
+    --content: #dcdcdc;
+    --nav-bg: #1d1e20;
+    --code-bg: #2e2e33;
+    --border: #333;
+}
+
+/* 鼠标悬停在链接上的颜色 */
+a:hover {
+    color: var(--theme);
+}
+
+/* =========================================
+   3. 细节组件优化
+   ========================================= */
+
+/* 优化 Table of Contents (目录) 样式 */
+.toc {
+    background: var(--tertiary);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 15px !important;
+    margin-bottom: 25px;
+}
+
+/* 首页名片模式下的头像特效 */
+.profile_inner img {
+    transition: transform 0.3s ease;
+    border: 3px solid var(--theme); /* 给头像加个边框 */
+    padding: 5px;
+}
+
+.profile_inner img:hover {
+    transform: rotate(5deg) scale(1.05); /* 鼠标划过头像微微旋转放大 */
+}
+
+/* 按钮样式微调 */
+.button {
+    background: var(--theme) !important;
+    border-radius: 8px !important;
+    transition: 0.3s;
+}
+
+.button:hover {
+    filter: brightness(1.2); /* 悬停时稍微变亮 */
+}
