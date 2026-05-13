@@ -41,10 +41,16 @@ theme = 'PaperMod'
 
 # 导航栏配置
 [[menu.main]]
-    name = "Article"
-    url = "/posts/"
+    name = "Academic"      # 这里的名字可以叫 Research 或 Portfolio
+    url = "/academic/"    # 对应 content/academic 文件夹
     weight = 10
+
+[[menu.main]]
+    name = "Daily"         # 这里的名字可以叫 Blog 或 Life
+    url = "/daily/"       # 对应 content/daily 文件夹
+    weight = 20
+
 [[menu.main]]
     name = "Search"
     url = "/search/"
-    weight = 20
+    weight = 30

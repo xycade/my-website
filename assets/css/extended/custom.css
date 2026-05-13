@@ -84,3 +84,42 @@ a:hover {
 .button:hover {
     filter: brightness(1.2); /* 悬停时稍微变亮 */
 }
+
+/* 将 Academic 列表页变成两栏或三栏网格 */
+.section-academic .list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 25px;
+    background: transparent !important;
+}
+
+.section-academic .post-entry {
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* 保证封面图圆角 */
+}
+
+.section-academic .post-entry:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* 让 Daily 列表更窄、更像新闻列表 */
+.section-daily .post-entry {
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    border-left: 4px solid var(--theme); /* 左侧加一条绿色装饰线 */
+    background: var(--tertiary);
+}
+
+.section-daily .post-title {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.section-daily .post-meta {
+    font-size: 0.8rem;
+    color: var(--secondary);
+}
