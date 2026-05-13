@@ -21,7 +21,7 @@ theme = 'PaperMod'
         displayFullContent = false
         imageUrl = "img/avatar.jpg" # 头像路径，稍后教你放图
         imageWidth = 150
-        imageHeight = 180
+        imageHeight = 150
 
         # 首页上的功能按钮
         [[params.profileMode.buttons]]
