@@ -19,7 +19,7 @@ theme = 'PaperMod'
         title = "Hello，I'm Cade 👋"
         subtitle = "Geographer/ Graduate Student/ Python Developer"
         displayFullContent = false
-        imageUrl = "img/avatar2.png" # 头像路径，稍后教你放图
+        imageUrl = "img/avatar.png" # 头像路径，稍后教你放图
         imageWidth = 150
         imageHeight = 180
 
