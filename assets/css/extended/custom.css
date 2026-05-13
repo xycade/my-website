@@ -101,9 +101,47 @@ a:hover {
     overflow: hidden; /* 保证封面图圆角 */
 }
 
+/* 1. 缩小缩略图尺寸 */
+.section-academic .post-entry .post-cover img {
+    max-height: 220px;       /* 限制最大高度，让图不再霸屏 */
+    width: auto;            /* 宽度自适应 */
+    margin: 0 auto;         /* 居中 */
+    object-fit: contain;    /* 确保图片不被裁剪，完整显示 */
+    background: #fdfdfd;    /* 给图片加个浅色底色，更有质感 */
+}
+
+/* 2. 简介文字样式：限两行显示 */
+.section-academic .entry-content {
+    font-size: 0.95rem;     /* 字体比标题小一点 */
+    color: var(--secondary); /* 使用副标题颜色 */
+    line-height: 1.6;
+    margin-top: 10px;
+
+    /* 核心代码：多行文本截断（只显示两行） */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;   /* 限制显示 2 行 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; /* 超出部分显示省略号 ... */
+}
+
+/* 3. 调整标题间距 */
+.section-academic .entry-header h2 {
+    font-size: 1.4rem;
+    line-height: 1.3;
+    margin-bottom: 8px;
+}
+
+/* 4. 整体卡片微调：让内容更紧凑 */
+.section-academic .post-entry {
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #eee;
+    transition: 0.3s ease;
+}
+
 .section-academic .post-entry:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
 /* 让 Daily 列表更窄、更像新闻列表 */
